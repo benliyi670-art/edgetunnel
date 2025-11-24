@@ -2,10 +2,11 @@ name = "benli"                              # 你的项目名，必须和 Cloudf
 compatibility_date = "2025-11-24"
 
 # 下面这行必须加！告诉 Cloudflare 这是 Pages 项目
-pages_build_output_dir = "./dist"
+npx wrangler pages deploy . --project-name benli
 
 # ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
 # 关键：KV 绑定写这里！！！
 [[kv_namespaces]]
 binding = "KV"                                      # 代码里就用 env.KV
 id = "044a2f4bdce04217aa53e7873954c716"             # 你给的这个 ID，完全正确！
+
