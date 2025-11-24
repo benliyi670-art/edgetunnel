@@ -1,9 +1,0 @@
-name = "benli"
-compatibility_date = "2025-11-24"
-
-pages_build_output_dir = "./dist"
-
-[[kv_namespaces]]
-binding = "kv"
-id = "044a2f4bdce04217aa53e7873954c716"
-
